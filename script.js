@@ -239,7 +239,7 @@ function setupEventListeners(audioManager) {
         const deltaX = touchX - touchStartX;
         
         const playerRect = player.getBoundingClientRect();
-        movePlayer(playerRect.left + deltaX);
+        movePlayer(playerRect.left + deltaX * 4);
         
         touchStartX = touchX;
     }, { passive: false });
